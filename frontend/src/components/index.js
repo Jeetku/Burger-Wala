@@ -14,3 +14,8 @@ export { default as Profile } from "./profile/Profile.jsx";
 export { default as MyOrders } from "./myOrders/MyOrders.jsx";
 export { default as OrderDetails } from "./myOrders/OrderDetails.jsx";
 export { default as Dashboard } from "./admin/Dashboard.jsx";
+export { default as Users } from "./admin/Users.jsx";
+export { default as Orders } from "./admin/Orders.jsx";
+export { default as About } from "./about/About.jsx";
+export { default as NotFound } from "./layout/NotFound.jsx";
+export { default as Loader } from "./layout/Loader.jsx";

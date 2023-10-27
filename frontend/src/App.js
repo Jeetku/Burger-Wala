@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  About,
   Cart,
   ConfirmOrder,
   Contact,
@@ -9,10 +10,13 @@ import {
   Home,
   Login,
   MyOrders,
+  NotFound,
   OrderDetails,
+  Orders,
   PaymentSuccess,
   Profile,
   Shipping,
+  Users,
 } from "./components";
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -27,9 +31,11 @@ import "./styles/confirmOrder.scss";
 import "./styles/paymentSuccess.scss";
 import "./styles/login.scss";
 import "./styles/profile.scss";
-import "./styles/myOrders.scss";
+import "./styles/table.scss";
 import "./styles/orderDetails.scss";
 import "./styles/dashboard.scss";
+import "./styles/about.scss";
+import "./styles/notfound.scss";
 
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
@@ -50,6 +56,10 @@ const App = () => {
           <Route path="/myorders" element={<MyOrders />} />
           <Route path="/order/:id" element={<OrderDetails />} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/admin/users" element={<Users />} />
+          <Route path="/admin/orders" element={<Orders />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
